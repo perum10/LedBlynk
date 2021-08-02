@@ -1,5 +1,5 @@
 
-//Inclueix i defineix Blynk i la ESP8266
+//Inclou i defineix Blynk i la ESP8266
 
 #define BLYNK_PRINT Serial
 
@@ -7,9 +7,9 @@
 #include <BlynkSimpleEsp8266.h>
 
 
-char auth[] = "1j5XUb-6UxW58jIsG1vFFv6cUITpydlG"; //Escriu la clau que s'ha enviat al teu correu
-char ssid[] = "ADAMO-D850"; //Nom de la teva wifi
-char pass[] = "TP4INUWIHZZBTV"; //Clau de la teva wifi
+char auth[] = "************"; //Escriu la clau que s'ha enviat al teu correu
+char ssid[] = "************"; //Nom de la teva wifi
+char pass[] = "************"; //Clau de la teva wifi
 
 WidgetLED led1(V1);
 
@@ -32,10 +32,11 @@ void blinkLedWidget()
 void setup()
 {
 
-  Serial.begin(9600); //La freqüència en que va la placa
+  Serial.begin(9600); //La freqüència en què va la placa
 
   Blynk.begin(auth, ssid, pass);
   // Si tens un servidor pots fer-lo servir amb les funcions de sota, treient la dobla barra
+  
   //Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 80);
   //Blynk.begin(auth, ssid, pass, IPAddress(192,168,1,100), 8080);
 
